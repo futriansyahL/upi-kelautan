@@ -202,11 +202,15 @@
 		<div class="container-fluid padding">
 			<div class="row padding">
 				<div class="col-lg-6">
-					<iframe width="560" height="315" 
-						src="https://www.youtube.com/embed/uSpL9GR0QaI" 
-						title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay;
-						       clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/uSpL9GR0QaI"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
 				</div>
 				<div class="col-lg-6">
 					<h2>Tentang Kami</h2>
@@ -228,9 +232,48 @@
 		<!--- Cards -->
 
 		<!--- Two Column Section -->
-
+		<div class="container-fluid padding">
+			<div class="row padding">
+             
+				<div  id="text-1" class="col-lg-6" style="background-color: white">
+                    <div class="text-center" >
+					<h3>Kemahasiswaan</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+						excepturi quaerat! Corporis suscipit, ea facere minima eum fugiat
+						accusantium magnam numquam incidunt ad quo nesciunt voluptatem et
+						animi cumque recusandae.
+					</p>
+                        <button onclick="myFunction()">Hapus Section ini</button>
+				</div>
+                </div>
+				<div id="text-2" class="col-lg-6" style="background-color: grey;">
+                <div class="text-center">
+					<h3>Kemahasiswaan</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+						excepturi quaerat! Corporis suscipit, ea facere minima eum fugiat
+						accusantium magnam numquam incidunt ad quo nesciunt voluptatem et
+						animi cumque recusandae.
+					</p>
+                        <button onclick="myFunction2()">Hapus Section ini</button>
+				</div>
+            </div>
+		</div>
 		<!--- Connect -->
 
 		<!--- Footer -->
+
+        <script>
+        function myFunction() {
+        var myobj = document.getElementById("text-1");
+        myobj.remove();
+}
+
+        function myFunction2() {
+        var myobj = document.getElementById("text-2");
+        myobj.remove();
+}
+</script>
 	</body>
 </html>
